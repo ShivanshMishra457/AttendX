@@ -1,29 +1,21 @@
 {
-  "name": "smart-attendance-mern",
+  "name": "attendance-client",
+  "private": true,
   "version": "1.0.0",
-  "description": "Smart Student Attendance System - MERN stack (MongoDB, Express, React, Node)",
-  "main": "server/index.js",
+  "type": "module",
   "scripts": {
-    "install-all": "npm install && npm install --prefix client",
-    "server": "node --watch server/index.js",
-    "client": "npm run dev --prefix client",
-    "dev": "concurrently -n API,WEB -c magenta,cyan \"npm run server\" \"npm run client\"",
-    "start": "node server/index.js",
-    "build": "npm run build --prefix client",
-    "seed": "node server/seed.js"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "license": "MIT",
   "dependencies": {
-    "bcryptjs": "^3.0.3",
-    "cors": "^2.8.6",
-    "dotenv": "^18.0.7",
-    "express": "^4.22.3",
-    "helmet": "^8.3.0",
-    "jsonwebtoken": "^9.0.3",
-    "mongoose": "^9.11.1",
-    "morgan": "^1.12.1"
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "react-router-dom": "^7.18.4",
+    "recharts": "^3.10.1"
   },
   "devDependencies": {
-    "concurrently": "^10.0.6"
+    "@vitejs/plugin-react": "^6.1.2",
+    "vite": "^8.3.4"
   }
 }
